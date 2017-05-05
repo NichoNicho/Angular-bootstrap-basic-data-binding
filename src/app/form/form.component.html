@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-md-4 col-md-push-4">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Input" [(ngModel)]="username">
+      <span class="input-group-btn">
+        <button class="btn btn-info" type="button"
+        [disabled]="username === ''"
+        (click)="username = ''"
+        >Reset</button>
+      </span>
+    </div>
+    <hr>
+    <p class="col-md-4 col-md-push-2">{{username}}</p>
+  </div>
+</div>
